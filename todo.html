@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="todo.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:500,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="titlePage"><h1>Work TO-DOS</h1></header>
+    <section class="toDoInput">
+      <div class="description">
+        <p id="firstParagraph">
+          Enter text into the input field to add items to your list (max. 28
+          characters)
+        </p>
+        <p id="secondParagraph">Click the item to mark it as complete</p>
+        <p id="thirdParagraph">
+          Click the "X" to remove the item from your list
+        </p>
+      </div>
+      <input type="text" maxlength="28" placeholder="New item..." id="inputArea" />
+      <button class="btn" style="font-size:20px"><i class="fa fa-pencil"></i></button>
+      <ol id="toDoItems"></ol>
+    </section>
+  </body>
+</html>
