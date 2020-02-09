@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css?family=Roboto:500,900&display=swap"
       rel="stylesheet"
     />
+    <script src="todo.js" defer></script>
   </head>
   <body>
     <header class="titlePage"><h1>Work TO-DOS</h1></header>
@@ -28,9 +29,21 @@
           Click the "X" to remove the item from your list
         </p>
       </div>
-      <input type="text" maxlength="28" placeholder="New item..." id="inputArea" />
-      <button class="btn" style="font-size:20px"><i class="fa fa-pencil"></i></button>
-      <ol id="toDoItems"></ol>
+      <div class="inputBtn">
+        <input
+          type="text"
+          maxlength="28"
+          placeholder="New item..."
+          id="inputArea"
+        />
+        <button class="btn" style="font-size:20px">
+          <i class="fa fa-pencil"></i>
+        </button>
+      </div>
+
+      <div id="toDoItems">
+       
+      </div>
     </section>
   </body>
 </html>

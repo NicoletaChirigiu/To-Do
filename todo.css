@@ -44,6 +44,13 @@ body {
   color: var(--shadedBlue);
 }
 
+.inputBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
 #inputArea {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
@@ -55,11 +62,13 @@ body {
 }
 
 .btn {
+  margin-left: 4px;
   background-color: var(--shadedBlue);
   color: var(--pencil);
   border: none;
   border-radius: 5px;
-  padding:8px;
+  padding: 8px 10px;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -67,3 +76,38 @@ body {
   background-color: #03849b;
 }
 
+.listItems {
+  margin:10px auto;
+  max-width: 70%;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  border: 2px solid var(--shadedBlue);
+  border-radius: 5px;
+  color: aliceblue;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 10px;
+  list-style: none;
+  overflow: auto;
+  background-color: var(--Blue);
+}
+
+.listItems:hover,
+.listItems:hover button {
+  background-color: #07b6da;
+}
+
+.btnItems {
+  border: none;
+  padding: 0 10px;
+  color: var(--shadedBlue);
+  font-weight: 900;
+  font-size: 20px;
+  background-color: var(--Blue);
+  cursor: pointer;
+}
+
+.finishedItem {
+  background-color: #51df70;
+}
